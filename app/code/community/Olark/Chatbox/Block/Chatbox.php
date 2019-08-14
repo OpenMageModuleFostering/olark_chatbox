@@ -133,11 +133,12 @@ class Olark_Chatbox_Block_Chatbox
         }
 
         // Capture extra Magento-specific data for Olark config.
+        $recentEvents = $this->_popRecentEvents();
         $magentoData = array(
             'total' => $totalValueOfItems,
             'formatted_total' => formatPrice($totalValueOfItems),
             'extra_items' => $extraItems,
-            'recent_events' => $this->_popRecentEvents()
+            'recent_events' => $recentEvents 
         );
 
         // Build and return HTML that represents the Olark embed and
