@@ -37,6 +37,11 @@
                 <class>Olark_Chatbox_Block</class>
             </chatbox>
         </blocks>
+        <models>
+            <olark_chatbox_model_observer>
+                <class>Olark_Chatbox_Model_Observer</class>
+            </olark_chatbox_model_observer>
+        </models>
         <events>
 
             <checkout_quote_destroy>
@@ -58,6 +63,16 @@
                     </olark_chatbox_controller_action_predispatch_checkout_onepage_index>
                 </observers>
             </controller_action_predispatch_checkout_onepage_index>
+
+            <controller_action_predispatch_checkout_onepage_success>
+                <observers>
+                    <olark_chatbox_controller_action_predispatch_checkout_onepage_success>
+                        <type>singleton</type>
+                        <class>olark_chatbox_model_observer</class>
+                        <method>recordEvent</method>
+                    </olark_chatbox_controller_action_predispatch_checkout_onepage_success>
+                </observers>
+            </controller_action_predispatch_checkout_onepage_success>
 
             <controller_action_predispatch_checkout_multishipping_index>
                 <observers>
@@ -89,6 +104,26 @@
                 </observers>
             </googlecheckout_checkout_before>
 
+            <controller_action_layout_render_before_onestepcheckout_index_index>
+                <observers>
+                    <olark_chatbox_controller_action_layout_render_before_onestepcheckout_index_index>
+                        <type>singleton</type>
+                        <class>olark_chatbox_model_observer</class>
+                        <method>recordEvent</method>
+                    </olark_chatbox_controller_action_layout_render_before_onestepcheckout_index_index>
+                </observers>
+            </controller_action_layout_render_before_onestepcheckout_index_index> 
+       
+            <checkout_type_onepage_save_order>
+                <observers>
+                    <olark_chatbox_checkout_type_onepage_save_order>
+                        <type>singleton</type>
+                        <class>olark_chatbox_model_observer</class>
+                        <method>recordEvent</method>
+                    </olark_chatbox_checkout_type_onepage_save_order>
+                </observers>  
+            </checkout_type_onepage_save_order>
+
             <paypal_prepare_line_items>
                 <observers>
                     <olark_chatbox_paypal_prepare_line_items>
@@ -108,6 +143,26 @@
                     </olark_chatbox_sales_order_place_after>
                 </observers>
             </sales_order_place_after>
+
+            <sales_quote_delete_after>
+                <observers>
+                    <olark_chatbox_sales_quote_delete_after>
+                        <type>singleton</type>
+                        <class>olark_chatbox_model_observer</class>
+                        <method>recordEvent</method>
+                    </olark_chatbox_sales_quote_delete_after>
+                </observers>
+            </sales_quote_delete_after>
+
+            <checkout_type_onepage_save_order>
+                <observers>
+                    <olark_chatbox_checkout_type_onepage_save_order>
+                        <type>singleton</type>
+                        <class>olark_chatbox_model_observer</class>
+                        <method>recordEvent</method>
+                    </olark_chatbox_checkout_type_onepage_save_order>
+                </observers>
+            </checkout_type_onepage_save_order>
 
             <checkout_submit_all_after>
                 <observers>
