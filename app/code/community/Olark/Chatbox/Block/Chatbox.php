@@ -58,14 +58,14 @@ class Olark_Chatbox_Block_Chatbox
         }        
 
         // build cart and total arrays
-        $items = Mage::getSingleton('checkout/session')->getQuote()->getAllItems();
+        $items = Mage::getSingleton('checkout/session')->getQuote()->getAllVisibleItems();
         if ($items) {
           $totalValue = $totalItems = 0;
           foreach($items as $item) {
             $product = array(
             	'name' => $item->getName(),
             	'sku'     => $item->getSku(),
-            	'quantity'     => $item->getQty(),
+            	'quantity' => $item->getQty(),
             	'price'   => $item->getPrice()
             );
             $products[] = $product;

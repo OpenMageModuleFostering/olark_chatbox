@@ -32,9 +32,9 @@
                 <description>
                   <![CDATA[
                    <strong>New to Olark?</strong>
-                   <a target="_blank" href="https://olark.com/signup/create_new_account?rid=magentocartsaver1_0">Signup for a FREE Olark account.</a>
+                   <a target="_blank" href="https://olark.com/signup/create_new_account?rid=magentocartsaver1_0">Create an account.</a>
                    <strong>Already an Olark user?</strong>
-                   <a target="_blank" href="https://olark.com/install">Find your Olark Site-ID.</a>
+                   <a target="_blank" href="https://olark.com/settings/code">Find your Site-ID.</a>
                   ]]>
                 </description>
             </siteID>
