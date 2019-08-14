@@ -20,7 +20,5 @@
 
 class Olark_Chatbox_Helper_Data extends Mage_Core_Helper_Abstract
 {
-    // THIS EMPTY FILE IS REQUIRED!  Magento uses it for the Admin.
-    // It is related to "Olark_Chatbox_Helper" in config.xml
-    // http://stackoverflow.com/a/7242531
+
 }

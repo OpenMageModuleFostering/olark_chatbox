@@ -1,24 +1,24 @@
 <?xml version="1.0"?>
 <package>
     <name>Olark_Chatbox</name>
-    <version>1.0.10</version>
+    <version>1.0.4</version>
     <stability>stable</stability>
     <license uri="http://opensource.org/licenses/afl-3.0.php">Academic Free License (AFL 3.0)</license>
     <channel>community</channel>
     <extends/>
-    <summary>Olark Live Chat with CartSaver for Magento</summary>
-    <description>Be your customers' hero. Nothing answers customers or saves the sale faster than Olark live chat.&#xD;
+    <summary>Drive more sales. Talk to your customers on your Magento store with Olark Live Chat.</summary>
+    <description>Talk to your customers. You'll sell more, faster.&#xD;
 &#xD;
-With CartSaver for Magento, see in real-time exactly what your customer do on your Magento store and then take action. End abandoned shopping carts.&#xD;
+Olark Live Chat helps thousands of businesses talk to the customers browsing their website so they can drive more sales.&#xD;
 &#xD;
-Be their favorite salesperson as you can follow along as your customers add and remove items from their shopping carts, so you can talk to them about what they are buying.&#xD;
+With Olark's CartSaver extension for Magento, you can put an end to abandoned shopping carts. Watch your customers add and remove items from their shopping carts while they shop and then step in to talk to them to close the sale.&#xD;
 &#xD;
-Over 10,000 customers rely on Olark to make their customers happier and buying more.</description>
-    <notes>Fixes a bug where price formatting could cause errors in some circumstances.</notes>
+Try it FREE at Olark.com.</description>
+    <notes>This is the first stable release of the official Olark Live Chat CartSaver extension for Magento. It should work for all versions from Magento 1.4 upwards.</notes>
     <authors><author><name>Olark Live Chat</name><user>olark</user><email>support@olark.com</email></author></authors>
-    <date>2015-05-11</date>
-    <time>23:08:53</time>
-    <contents><target name="mageetc"><dir name="modules"><file name="Olark_Chatbox.xml" hash="220e124817be0b67876250efca078b83"/></dir></target><target name="magecommunity"><dir name="Olark"><dir name="Chatbox"><dir name="Block"><file name="Chatbox.php" hash="2485700d7b66e999736f661b4c316916"/><file name=".Chatbox.php.swp" hash="c8e6a26700cdc554b0093bf6127eedb2"/></dir><dir name="Helper"><file name="Data.php" hash="6d1e1005a4c4f22ccdd7af419a2ed28a"/></dir><dir name="Model"><file name="Observer.php" hash="e179b730ccc182588dc819d4a44355ba"/></dir><dir name="etc"><file name="config.sunir" hash="3c2ea255f957e37b176ae9e2aaa64a5e"/><file name="config.xml" hash="890fb7e1e1155bc2898b840be082865f"/><file name="widget.xml" hash="ea835f7e81d6335ee0932a731c79d85f"/></dir><file name=".DS_Store" hash="f41f525169d6272ff2c77dc5440285c6"/></dir></dir></target></contents>
+    <date>2012-09-17</date>
+    <time>22:16:32</time>
+    <contents><target name="magecommunity"><dir name="Olark"><dir name="Chatbox"><dir name="Block"><file name="Chatbox.php" hash="ad94ec36b70849e4799d295de94f86ad"/></dir><dir name="Helper"><file name="Data.php" hash="c7bb144614b8490213397584f1050492"/></dir><dir name="etc"><file name="config.xml" hash="8aa65fd4a9fe24e759a7ace841541833"/><file name="widget.xml" hash="250dc2b34a2051549ff4f0c818647942"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Olark_Chatbox.xml" hash="220e124817be0b67876250efca078b83"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
 </package>
