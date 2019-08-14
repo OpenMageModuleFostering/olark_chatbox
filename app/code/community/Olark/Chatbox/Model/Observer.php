@@ -18,9 +18,26 @@
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
  */
 
-class Olark_Chatbox_Helper_Data extends Mage_Core_Helper_Abstract
+// See ../etc/config.xml for observer configuration.
+// List of events: http://www.nicksays.co.uk/magento-events-cheat-sheet-1-7/
+class Olark_Chatbox_Model_Observer
 {
-    // THIS EMPTY FILE IS REQUIRED!  Magento uses it for the Admin.
-    // It is related to "Olark_Chatbox_Helper" in config.xml
-    // http://stackoverflow.com/a/7242531
+
+    public function recordEvent($observer) {
+
+        // Get a list of the events
+        $session = Mage::getSingleton('core/session');
+        $events = $session->getData('olark_chatbox_events');
+
+        // Append to this list. Add a timestamp so we know the
+        // relative times that the events happened.
+        $events[] = array(
+            'type' => $observer->getEvent()->getName(),
+            'timestamp' => time()
+        );
+
+        $session->setData('olark_chatbox_events', $events);
+
+    }
+
 }

@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <package>
     <name>Olark_Chatbox</name>
-    <version>1.0.6</version>
+    <version>1.0.7</version>
     <stability>stable</stability>
     <license uri="http://opensource.org/licenses/afl-3.0.php">Academic Free License (AFL 3.0)</license>
     <channel>community</channel>
     <extends/>
-    <summary>Chat saves the sale. Olark Live Chat with CartSaver to your Magento store.</summary>
+    <summary>Olark Live Chat with CartSaver for Magento</summary>
     <description>Be your customers' hero. Nothing answers customers or saves the sale faster than Olark live chat.&#xD;
 &#xD;
 With CartSaver for Magento, see in real-time exactly what your customer do on your Magento store and then take action. End abandoned shopping carts.&#xD;
@@ -14,13 +14,11 @@ With CartSaver for Magento, see in real-time exactly what your customer do on yo
 Be their favorite salesperson as you can follow along as your customers add and remove items from their shopping carts, so you can talk  to them about what they are buying.&#xD;
 &#xD;
 Over 5,000 customers rely on Olark to make their customers happier and buying more.</description>
-    <notes>Fixed problem with dependent shopping cart items showing up in list as ghost items.&#xD;
-&#xD;
-Made widget help text slightly clearer.</notes>
+    <notes>Now tracks checkout notifications and includes shopping cart contents, and which items were added or removed, in notifications. Moved most configuration into Olark.</notes>
     <authors><author><name>Olark Live Chat</name><user>olark</user><email>support@olark.com</email></author></authors>
-    <date>2013-03-16</date>
-    <time>04:07:07</time>
-    <contents><target name="mageetc"><dir name="modules"><file name="Olark_Chatbox.xml" hash="220e124817be0b67876250efca078b83"/></dir></target><target name="magecommunity"><dir name="Olark"><dir name="Chatbox"><dir name="Block"><file name="Chatbox.php" hash="f20e9196a11994c6745fc6cfca0689fe"/></dir><dir name="Helper"><file name="Data.php" hash="c7bb144614b8490213397584f1050492"/></dir><dir name="etc"><file name="config.xml" hash="8aa65fd4a9fe24e759a7ace841541833"/><file name="widget.xml" hash="a5ea4c90caff27cae15e260cce466c8b"/></dir></dir></dir></target></contents>
+    <date>2013-03-25</date>
+    <time>19:11:16</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="Olark_Chatbox.xml" hash="220e124817be0b67876250efca078b83"/></dir></target><target name="magecommunity"><dir name="Olark"><dir name="Chatbox"><dir name="Block"><file name="Chatbox.php" hash="a44a578626222819adf81f075e504abb"/></dir><dir name="Helper"><file name="Data.php" hash="6d1e1005a4c4f22ccdd7af419a2ed28a"/></dir><dir name="Model"><file name="Observer.php" hash="e179b730ccc182588dc819d4a44355ba"/></dir><dir name="etc"><file name="config.xml" hash="9bae160df00092eb9e998f256b1c027b"/><file name="widget.xml" hash="e0dd79dcf207489b3067b256b7000377"/></dir></dir><file name="chatbox.tgz" hash="4db60165ce34a97c22bd245186b96e10"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
 </package>
