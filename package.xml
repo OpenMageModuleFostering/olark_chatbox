@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>Olark_Chatbox</name>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <stability>stable</stability>
     <license uri="http://opensource.org/licenses/afl-3.0.php">Academic Free License (AFL 3.0)</license>
     <channel>community</channel>
@@ -14,10 +14,10 @@ Olark Live Chat helps thousands of businesses talk to the customers browsing the
 With Olark's CartSaver extension for Magento, you can put an end to abandoned shopping carts. Watch your customers add and remove items from their shopping carts while they shop and then step in to talk to them to close the sale.&#xD;
 &#xD;
 Try it FREE at Olark.com.</description>
-    <notes>This is the first stable release of the official Olark Live Chat CartSaver extension for Magento. It should work for all versions from Magento 1.4 upwards.</notes>
+    <notes>This is the first stable release of the official Olark Live Chat CartSaver extension for Magento. It should work for all versions from Magento 1.5 upwards.</notes>
     <authors><author><name>Olark Live Chat</name><user>olark</user><email>support@olark.com</email></author></authors>
-    <date>2012-09-17</date>
-    <time>22:16:32</time>
+    <date>2012-09-24</date>
+    <time>17:55:08</time>
     <contents><target name="magecommunity"><dir name="Olark"><dir name="Chatbox"><dir name="Block"><file name="Chatbox.php" hash="ad94ec36b70849e4799d295de94f86ad"/></dir><dir name="Helper"><file name="Data.php" hash="c7bb144614b8490213397584f1050492"/></dir><dir name="etc"><file name="config.xml" hash="8aa65fd4a9fe24e759a7ace841541833"/><file name="widget.xml" hash="250dc2b34a2051549ff4f0c818647942"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Olark_Chatbox.xml" hash="220e124817be0b67876250efca078b83"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
