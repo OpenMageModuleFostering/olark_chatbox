@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Olark_Chatbox",
+    "name": "OpenMageModuleFostering\/Olark_Chatbox",
     "type": "magento-module",
     "license": "Academic-Free-License-(AFL-3.0)",
     "homepage": "",
     "description": "Olark Live Chat with CartSaver for Magento",
     "authors": [
-    {
-        "name": "Olark Live Chat",
-        "email": "support@olark.com"
-    }
-],
+        {
+            "name": "Olark Live Chat",
+            "email": "support@olark.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
